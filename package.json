@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/containership/containership.eslint.backend/issues"
   },
-  "homepage": "https://github.com/containership/containership.eslint.backend#readme"
+  "homepage": "https://github.com/containership/containership.eslint.backend#readme",
+  "dependencies": {
+    "eslint-plugin-import": "^2.14.0"
+  }
 }

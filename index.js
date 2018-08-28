@@ -11,7 +11,11 @@ module.exports = {
             "experimentalObjectRestSpread": true
         }
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
     "rules": {
         "indent": [
             "error",
@@ -74,6 +78,9 @@ module.exports = {
             "anonymous": "never",
             "named": "never",
             "asyncArrow": "always"
-        }]
+        }],
+
+        // import plugin rules
+        "import/no-unresolved": [2, { "commonjs": true }]
     }
 };
